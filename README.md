@@ -168,7 +168,7 @@ Credenciales de AWS en Windows (Previamente ya deberias tener un cuenta AWS para
 
 https://portal.aws.amazon.com/billing/signup#/start
 
-Se debe crear un usuario 
+Se debe crear un usuario en IAM de AWS
 
 ![](https://i.imgur.com/6c44d4A.jpg)
 
@@ -176,4 +176,10 @@ Y darle los permisos respectivos
 
 ![image](https://user-images.githubusercontent.com/2185148/90545266-ff4a1d00-e14d-11ea-85a3-e5f359b74c39.png)
 
+![image](https://user-images.githubusercontent.com/2185148/90552335-4806d380-e158-11ea-9d7c-ebbdd5bf1e43.png)
 
+Se crea sin etiquetas
+
+Descargamos el archivo csv con las credenciales
+
+![image](https://user-images.githubusercontent.com/2185148/90556543-bc447580-e15e-11ea-9ed6-b452d395ebed.png)
