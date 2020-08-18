@@ -172,6 +172,8 @@ Se debe crear un usuario
 
 ![](https://i.imgur.com/6c44d4A.jpg)
 
+Y darle los permisos respectivos
 
+![image](https://user-images.githubusercontent.com/2185148/90545266-ff4a1d00-e14d-11ea-85a3-e5f359b74c39.png)
 
 
