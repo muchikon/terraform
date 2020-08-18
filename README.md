@@ -183,3 +183,14 @@ Se crea sin etiquetas
 Descargamos el archivo csv con las credenciales
 
 ![image](https://user-images.githubusercontent.com/2185148/90556543-bc447580-e15e-11ea-9ed6-b452d395ebed.png)
+
+En windows se crea un archivo credentials con el Powershell
+
+`PS C:\users\usuario> mkdir .aws`
+
+`PS C:\users\usuario> cd .\.aws\`
+
+En esta ruta se crea el archivo creddentials
+
+`PS C:\users\usuario\.aws>` 
+
