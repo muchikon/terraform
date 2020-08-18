@@ -130,5 +130,7 @@ provisioners: aca personalizamos nuestra imagen, añadir paquetes, crear directo
 
 post-processor: podemos tener archivos de salida y ejecutar comandos despues de haber creado la infraestructura, todo corre de manera local
 
-Instalacion de Terraform:
+## Capitulo 7
+
+**Instalacion de Terraform:**
 <https://learn.hashicorp.com/tutorials/packer/getting-started-install>
