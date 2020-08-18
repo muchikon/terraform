@@ -86,9 +86,11 @@ Caracteristicas clave de terraform
 ## Capitulo 5
 Terraform vs otras herramientas de IAC
 
-Creacion y configuración de infraestructura: 
-Ansible: Para gestion de las configuraciones
-Terraform: Para administrar la infraestructura
+**Creacion y configuración de infraestructura**
+
+**Ansible:** Para gestion de las configuraciones
+
+**Terraform:** Para administrar la infraestructura
 
 **Infraestructura mutable:** Es cuando el estado de un servidor cambia
 > Ejemplo: cuando se lanza la nueva version y el aplicativo lo enlaza todo en el mismo servidor 
