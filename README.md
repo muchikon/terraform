@@ -162,4 +162,16 @@ Para validar en el powershell ejecutaremos los comandos:
 
 ![](https://i.imgur.com/c32eORf.jpg)
 
+## Capitulo 8
+
+Credenciales de AWS en Windows (Previamente ya deberias tener un cuenta AWS para seguir con lo indicado)
+
+https://portal.aws.amazon.com/billing/signup#/start
+
+Se debe crear un usuario 
+
+![](https://i.imgur.com/6c44d4A.jpg)
+
+
+
 
