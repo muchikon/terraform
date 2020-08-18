@@ -132,11 +132,34 @@ provisioners: aca personalizamos nuestra imagen, añadir paquetes, crear directo
 
 post-processor: podemos tener archivos de salida y ejecutar comandos despues de haber creado la infraestructura, todo corre de manera local
 
-**Instalacion de Packer:**
-
-<https://learn.hashicorp.com/tutorials/packer/getting-started-install>
-
 ## Capitulo 7
 
 **Instalacion de Terraform:**
 <https://www.terraform.io/downloads.html>
+
+Una vez descargado el instalador se debe guardar en una ruta, en la variable de entorno de windows PATH la modificamos
+
+![](https://i.imgur.com/1xUmEFb.jpg)
+
+Y ponemos la ruta 
+
+![](https://i.imgur.com/Cy1veJU.jpg)
+
+**Instalacion de Packer:**
+
+Como ya se realizo el proceso con Terraform ahora solo guardamos el instalador de packer en la misma ruta que el terraform
+
+<https://www.packer.io/downloads.html>
+
+Otra manera es instalar packer por medio de chocolatey que es un "open-source package management system para Windows"
+<https://learn.hashicorp.com/tutorials/packer/getting-started-install>
+
+Para validar en el powershell ejecutaremos los comandos:
+
+`terraform version`
+
+`packer version`
+
+![](https://i.imgur.com/c32eORf.jpg)
+
+
