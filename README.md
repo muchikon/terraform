@@ -113,5 +113,22 @@ Terraform: Para administrar la infraestructura
 
 ![](https://i.imgur.com/yJ8FLql.jpg)
 
+## Capitulo 6
 
+Herramientas para construir infraestructura inmutable
 
+**Packer:** Es una herramienta creada por hashicorp para crear imagenes en cualquier nube,
+usa formato JSON
+
+![](https://i.imgur.com/KpGWJfx.jpg)
+
+variables: aca definimos las variables que vamos a utilizar, se puede tomar variables de entorno
+
+builders: definimos de donde vamos a construir nuestra iamgen base
+
+provisioners: aca personalizamos nuestra imagen, añadir paquetes, crear directorios, actualizar paquetes.
+
+post-processor: podemos tener archivos de salida y ejecutar comandos despues de haber creado la infraestructura, todo corre de manera local
+
+Instalacion de Terraform:
+<https://learn.hashicorp.com/tutorials/packer/getting-started-install>
