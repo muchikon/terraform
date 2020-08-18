@@ -194,3 +194,16 @@ En esta ruta se crea el archivo creddentials
 
 `PS C:\users\usuario\.aws>` 
 
+En amazon hay una guia para configurar las credenciales
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+
+reemplazamos los valores de access_key y scret_keys por los valores del archivo csv que guardamos anteriormente
+
+    [default]
+    aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+    aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+## Capitulo 9
+
+
+
