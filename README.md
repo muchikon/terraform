@@ -205,8 +205,41 @@ reemplazamos los valores de access_key y scret_keys por los valores del archivo 
 
 ## Capitulo 9
 
-Packer Demo
+[Packer Demo](https://github.com/muchikon/terraform/tree/master/demo-packer "Packer Demo")
 
+## Capitulo 10
 
+**Docker: Conceptos Clave**
 
+Docker es una herramienta que nos permite crear infraestructura inmutable permitiéndonos encapsular y portar nuestras aplicaciones en una misma imagen logrando que instanciemos la misma imagen la cantidad de veces que queramos.
 
+Imagen: Es una capa creada a partir de un archivo Dockerfile donde definimos la imagen base, todos los paquetes que vayamos a utilizar, directorios, etc.
+
+Container: Un container es una instancia de una imagen de Docker. No tienen estado, no deben guardar ningún tipo de información.
+
+Ejemplo de archivo dockerfile
+
+![image](https://user-images.githubusercontent.com/2185148/90701610-9a2a2080-e24e-11ea-9cb6-e698bf270a5c.png)
+
+## Capitulo 11
+
+[Docker Demo](https://github.com/muchikon/terraform/tree/master/demo-docker "Docker Demo")
+
+## Capitulo 12
+
+Instalar terraform y configurar una cuenta de AWS, se vio en capitulos anteriores
+
+## Capitulo 13
+
+[Terraform1 Demo](https://github.com/muchikon/terraform/tree/master/demo-terraform1 "Terraform1 Demo")
+
+## Capitulo 14
+
+Lista de proveedores Terraform:
+https://www.terraform.io/docs/providers/index.html
+
+![image](https://user-images.githubusercontent.com/2185148/90802442-df952f00-e2dc-11ea-9cd4-5b7293c58164.png)
+
+## Capitulo 15
+
+[Archivos de definicion y variables](https://github.com/muchikon/terraform/tree/master/variables "Archivos de definicion y variables")
