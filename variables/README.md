@@ -9,7 +9,7 @@ El archivo donde asignamos los valores de las variables debe terminar en .tfvars
 Mas informacion de variables esta en la documentacion oficial de Terraform
 https://www.terraform.io/docs/configuration/variables.html
 
-main.tf
+main.tf (se encuentra la definición de todos los recursos a crear)
 ```
 provider "aws" {
   region = "us-east-2"
@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-variables.tf 
+variables.tf (se encuentran declaradas todas las variables que se utilizaran)
 ```
 variable "ami_id" {
     default=""
@@ -38,7 +38,7 @@ variable "tags" {
 }
 ```
 
-dev.tfvars
+dev.tfvars (contendran los valores de las variables declaradas, terraform no es capaz de interpretar estos archivos por lo que es necesario enviarlo como un argumento -var-file dev.tfvars. Se debe enviar este argumento con los commandos plan | appy | destroy)
 ```
 ami_id="ami-0934715xxxxxxxxxx"
 instance_type="t2.micro"

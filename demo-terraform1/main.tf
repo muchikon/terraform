@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "codigo AMI ya creado"
+  ami           = "ami-0934715a22ca8e8aa"
   instance_type = "t2.micro"
 
   tags = {
