@@ -34,6 +34,7 @@ module "app-platzi" {
 * En la raiz declaramos este archivo que llamara al archivo hijo que esta en la carpeta instance.
 * Se llama el nombre del modulo que se declaro en app.tf "app-platzi" y la etiqueta que se puso al output hijo.
 * Esto es para obtener la IP de la maquina que se creara para luego accesar por medio de ssh
+* Mas informacion de los outputs en este enlace https://www.terraform.io/docs/configuration/outputs.html
 
 ```
 output "modulo_instance_ip" {
