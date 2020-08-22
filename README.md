@@ -260,6 +260,8 @@ Terraform utiliza un estado donde almacena todas las configuraciones que vayas r
 
 Debemos tener cuidado al manejar información sensible si utilizamos nuestro archivo sin encriptación ya que toda la información es visible.
 
+
+
 ## Capitulo 19
 
 **Archivo de Backends**
@@ -290,4 +292,21 @@ terraform {
 
 ## Capitulo 20
 
-[Creacion de backend](https://github.com/muchikon/terraform/tree/master/demo-backend1 "Creacion de backend")
+**[Creacion de backend](https://github.com/muchikon/terraform/tree/master/demo-backend1 "Creacion de backend")**
+
+
+## Capitulo 21
+
+[**Encriptado del backend**](https://github.com/muchikon/terraform/tree/master/demo-backend2 "**Encriptado del backend**")
+
+## Capitulo 22
+
+**Tips de la vida real: Trabajo en equipo con backends**
+
+* Es una buena práctica tener el archivo de estado almacenado y versionado en algún Cloud Provider.
+* Encriptar nuestro archivo de estado.
+* Versionar nuestro backend.
+
+## Capitulo 23
+
+**Modulos locales**
