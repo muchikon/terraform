@@ -1,6 +1,6 @@
-ami_id	= "ami-08122xxxxxxxxxx"
+ami_id	= "ami-08122f94749f9abf3"
 instance_type = "t2.large"
-tags	= { Name = "practica3", Environment = "Prod" }
+tags	= { Name = "practica2", Environment = "Prod" }
 sg_name	= "platzi-rules"
 ingress_rules = [
 	{

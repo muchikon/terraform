@@ -70,17 +70,21 @@ $ terraform init
 ```
 
 Empieza a descargar el modulo de la ruta de github
+
 ![image](https://user-images.githubusercontent.com/2185148/90966226-a227d180-e495-11ea-8a92-527141008899.png)
 
 ```
 $ terraform validate
 ```
+
 No deberia mostrar ningun error, sino toca revisar los archivos
 
 ```
 $ terraform plan -var-file prod.tfvars
 ```
+
 Se agregara dos recursos
+
 ![image](https://user-images.githubusercontent.com/2185148/90966243-e31fe600-e495-11ea-86e0-18dc95c03ff0.png)
 
 ```
@@ -88,6 +92,7 @@ $ terraform apply -var-file prod.tfvars
 ```
 
 Se crean los recursos y nos muestra la IP del servidor creado
+
 ![image](https://user-images.githubusercontent.com/2185148/90966266-2da16280-e496-11ea-9e46-23f14fb16f02.png)
 
 Es preferible borrar las maquinas virtuales para evitar un cobro a fin de mes.
