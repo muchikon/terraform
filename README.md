@@ -243,3 +243,133 @@ https://www.terraform.io/docs/providers/index.html
 ## Capitulo 15
 
 [Archivos de definicion y variables](https://github.com/muchikon/terraform/tree/master/variables "Archivos de definicion y variables")
+
+## Capitulo 16
+
+[Interpolacion, condiciones y ciclos](https://github.com/muchikon/terraform/tree/master/interpolacion "Interpolacion, condiciones y ciclos")
+
+## Capitulo 17
+
+[Security groups](https://github.com/muchikon/terraform/tree/master/interpolacion "Security groups")
+
+## Capitulo 18
+
+**Archivo de estados**
+
+Terraform utiliza un estado donde almacena todas las configuraciones que vayas realizando, este archivo se llama `terraform.tfstate`. Este archivo en formato JSON contiene toda la información respecto a nuestra infraestructura, tambien almacena las credenciales
+
+Debemos tener cuidado al manejar información sensible si utilizamos nuestro archivo sin encriptación ya que toda la información es visible.
+
+
+
+## Capitulo 19
+
+**Archivo de Backends**
+
+Terraform permite almacenar el estado de manera remota a través de Backends. Podemos almacenarlo en diferentes servicios de storage en la nube como S3, GCP,Azure,etc.
+
+Entre sus muchas ventajas que trae el trabajar con backends son:
+
+* Es más fácil trabajar en equipo. (Tenemos el archivo centralizado)
+* Facilita la integración continua.
+* Mayor disponibilidad.
+
+Los tipos de backend soportados por terraform son:
+https://www.terraform.io/docs/backends/types/index.html
+Algunos de ellos no tienen encriptacion.
+
+Ejemplo con S3
+
+```
+terraform {
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "path/to/my/key"
+    region = "us-east-1"
+  }
+}
+```
+
+## Capitulo 20
+
+**main.tf**
+* Se agrego un recurso tipo "aws_s3_bucket" con nombre "platzi-backend"
+* Se agrego la variable bucket_name declarado en el archivo variables.tf
+* Se agrego el acl que es el "access control list"
+
+```
+provider "aws" {
+	region="us-east-2"
+}
+resource "aws_s3_bucket" "platzi-backend" {
+	bucket = var.bucket_name
+	acl = var.acl 
+	tags = var.tags	
+}
+```
+
+**variable.tf**
+* El "bucket_name" que se crea en AWS S3 es platzi-terraform
+
+```
+variable "bucket_name" {
+	default = "platzi-terraform1"
+}
+
+variable "acl" {
+	default = "private"
+}
+
+variable "tags" {
+	default = {Environment = "Dev", CreatedBy = "terraform"}
+}
+```
+
+Una vez se tenga los archivos ejecutamos el comando
+
+```
+$ terraform init
+```
+
+Luego para validar 
+```
+$ terraform validate
+```
+Si no se tiene errores entonces ejecutamos
+
+```
+$ terraform apply -auto-approve
+```
+Con esto crea el bucket en AWS S3
+
+![image](https://user-images.githubusercontent.com/2185148/90945553-23765a00-e3eb-11ea-8e88-85d1f3b5c26a.png)
+
+Ahora se creara un archivo 
+
+**backend.tf**
+* En este enlace https://www.terraform.io/docs/backends/types/s3.html tenemos los detalles de las configuraciones de los backends
+* bucket = es el bucket que se creara en S3
+* key = dentro del bucket platzi-terraform se creara un archivo dev con el contenido del estado de terraform
+
+```
+terraform {
+  backend "s3" {
+    bucket = "platzi-terraform1"
+    key    = "dev"
+    region = "us-east-2"    
+  }
+}
+```
+Hacemos un terraform init para que reconozca el archivo creado.
+
+```
+$ terraform init
+```
+Inicializa el backend, y pregunta se deseamos copiar el estado al nuevo bucket s3, le indicamos que si.
+
+![image](https://user-images.githubusercontent.com/2185148/90945729-4c4b1f00-e3ec-11ea-9e0f-3300de1d399b.png)
+
+
+## Capitulo 21
+
+**Encriptado del backend**
