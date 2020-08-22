@@ -309,4 +309,9 @@ terraform {
 
 ## Capitulo 23
 
-**Modulos locales**
+[**Modulos locales**](https://github.com/muchikon/terraform/tree/master/modulos-locales "**Modulos locales**")
+
+## Capitulo 24
+
+**Modulos remotos**
+
