@@ -313,5 +313,9 @@ terraform {
 
 ## Capitulo 24
 
-**Modulos remotos**
+[**Modulos remotos**](https://github.com/muchikon/terraform/tree/master/modulos-remotos "**Modulos remotos**")
+
+## Capitulo 25
+
+**Demo**
 
