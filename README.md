@@ -315,7 +315,7 @@ terraform {
 
 [**Modulos remotos**](https://github.com/muchikon/terraform/tree/master/modulos-remotos "**Modulos remotos**")
 
-## Capitulo 25
+## Capitulo 25 y 26
 
-**Demo**
+[**Provisioners**](https://github.com/muchikon/terraform/tree/master/provisioners "**Provisioners**")
 
