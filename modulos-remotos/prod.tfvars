@@ -1,7 +1,7 @@
-ami_id	= "ami-08122f9xxxxxxxxx"
+ami_id	= "ami-08122f94749f9abf3"
 instance_type = "t2.large"
-tags	= { Name = "practica3", Environment = "Prod" }
-sg_name	= "platzi-rules-remoto"
+tags	= { Name = "practica1", Environment = "Prod" }
+sg_name	= "platzi-rules-provisioner"
 ingress_rules = [
 	{
 		from_port = "22"
