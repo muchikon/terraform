@@ -9,24 +9,31 @@ provider “aws” {
   region = ”us-east-2”
 }
 
-resource “aws_instance” “terraform-vm” {
-  ami = "codigo-ami a usar”
-  instance_type = ”t2.micro”
+resource "aws_instance" "web" {
+  ami = "codigo-ami a usar"
+  instance_type = "t2.micro"
   tags= {
-    Name = ”practica1”
-    Environment = “”Dev
+    Name = "terraform-vm"
+    Environment = "Dev"
   }
 }
 ```
-**provider: **es el proveedor donde nos vamos a conectar puede ser aws,azure,gcp, etc.
+
+**provider:** es el proveedor donde nos vamos a conectar puede ser aws,azure,gcp, etc.
+
 **region:** la region donde nos conectamos
+
 **resource:** los recursos que usaremos
-tipo de recurso: "aws_instance"
-maquina virtual a crear: "platzi-instance"
+
+**tipo de recurso:** "aws_instance"
+
 Parametros a usar dentro de resources:
-ami: codigo AMI de aws que tengas creado
-instance_type: tipo de instancia: 
-tags: (etiquetas que son parametrizables) por ejemplo Name y Environment
+
+**ami:** codigo AMI de aws que tengas creado
+
+**instance_type:** tipo de instancia
+
+**tags:** (etiquetas que son parametrizables) por ejemplo Name y Environment
 
 Una vez se tenga listo el archivo usamos el comando 
 
