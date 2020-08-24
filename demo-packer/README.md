@@ -24,7 +24,7 @@ Ya teniendo instalado el repo creas la imagen
 
 ![image](https://user-images.githubusercontent.com/2185148/90694957-246a8880-e23f-11ea-9c89-19a97f36a498.png)
 
-Una vez creada la iamgen en la seccion Images --> AMIs en la parte derecha hay una seccion"AMI ID" es lo que se copia en el archivo aws-ami.json en la seccion "source_ami"
+Una vez creada la imagen en la seccion Images --> AMIs en la parte derecha hay una seccion"AMI ID" es lo que se copia en el archivo aws-ami.json en la seccion "source_ami"
 
 ![image](https://user-images.githubusercontent.com/2185148/90696025-2e8d8680-e241-11ea-82cb-e736ba25dd6e.png)
 
